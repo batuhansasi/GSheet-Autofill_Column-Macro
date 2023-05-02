@@ -1,0 +1,53 @@
+function AI-AnchorText-Classifier() {
+  var spreadsheet = SpreadsheetApp.getActive();
+
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Client Site Calculator'), true);
+  spreadsheet.getRange('C3:C1001').activate();
+  spreadsheet.getActiveRangeList().clear({contentsOnly: true, skipFilteredRows: true});
+  spreadsheet.getRange('C3').activate();
+  spreadsheet.getCurrentCell().setFormula('=GPT_CLASSIFY(A3, "Target,Misc,URL,Brand,Topic,NA",\'AnchorTextBank\'!$A$1:$B$40,,,)');
+  spreadsheet.getActiveRange().autoFillToNeighbor(SpreadsheetApp.AutoFillSeries.DEFAULT_SERIES);
+
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('#1 Competitor Calculator'), true);
+  spreadsheet.getRange('C3').activate();
+  spreadsheet.getRange('C3:C1001').activate();
+  spreadsheet.getActiveRangeList().clear({contentsOnly: true, skipFilteredRows: true});
+  spreadsheet.getRange('C3').activate();
+  spreadsheet.getCurrentCell().setFormula('=GPT_CLASSIFY(A3, "Target,Misc,URL,Brand,Topic,NA",\'AnchorTextBank\'!$A$1:$B$40,,,)');
+  spreadsheet.getActiveRange().autoFillToNeighbor(SpreadsheetApp.AutoFillSeries.DEFAULT_SERIES);
+  
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('#2 Competitor Calculator'), true);
+  spreadsheet.getRange('C3').activate();
+  spreadsheet.getRange('C3:C1001').activate();
+  spreadsheet.getActiveRangeList().clear({contentsOnly: true, skipFilteredRows: true});
+  spreadsheet.getRange('C3').activate();
+  spreadsheet.getCurrentCell().setFormula('=GPT_CLASSIFY(A3, "Target,Misc,URL,Brand,Topic,NA",\'AnchorTextBank\'!$A$1:$B$40,,,)');
+  spreadsheet.getActiveRange().autoFillToNeighbor(SpreadsheetApp.AutoFillSeries.DEFAULT_SERIES);
+
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('#3 Competitor Calculator'), true);
+  spreadsheet.getRange('C3').activate();
+  spreadsheet.getRange('C3:C1001').activate();
+  spreadsheet.getActiveRangeList().clear({contentsOnly: true, skipFilteredRows: true});
+  spreadsheet.getRange('C3').activate();
+  spreadsheet.getCurrentCell().setFormula('=GPT_CLASSIFY(A3, "Target,Misc,URL,Brand,Topic,NA",\'AnchorTextBank\'!$A$1:$B$40,,,)');
+  spreadsheet.getActiveRange().autoFillToNeighbor(SpreadsheetApp.AutoFillSeries.DEFAULT_SERIES);
+
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('#4 Competitor Calculator'), true);
+  spreadsheet.getRange('C3').activate();
+  spreadsheet.getRange('C3:C1001').activate();
+  spreadsheet.getActiveRangeList().clear({contentsOnly: true, skipFilteredRows: true});
+  spreadsheet.getRange('C3').activate();
+  spreadsheet.getCurrentCell().setFormula('=GPT_CLASSIFY(A3, "Target,Misc,URL,Brand,Topic,NA",\'AnchorTextBank\'!$A$1:$B$40,,,)');
+  spreadsheet.getActiveRange().autoFillToNeighbor(SpreadsheetApp.AutoFillSeries.DEFAULT_SERIES);
+
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('#5 Competitor Calculator'), true);
+  spreadsheet.getRange('C3').activate();
+  spreadsheet.getRange('C3:C1001').activate();
+  spreadsheet.getActiveRangeList().clear({contentsOnly: true, skipFilteredRows: true});
+  spreadsheet.getRange('C3').activate();
+  spreadsheet.getCurrentCell().setFormula('=GPT_CLASSIFY(A3, "Target,Misc,URL,Brand,Topic,NA",\'AnchorTextBank\'!$A$1:$B$40,,,)');
+  spreadsheet.getActiveRange().autoFillToNeighbor(SpreadsheetApp.AutoFillSeries.DEFAULT_SERIES);
+
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Results'), true);
+
+};
